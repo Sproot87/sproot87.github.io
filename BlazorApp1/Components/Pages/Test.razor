@@ -1,0 +1,18 @@
+﻿@page "/Test"
+@rendermode InteractiveServer
+
+<PageTitle>BRT Test</PageTitle>
+
+<h1>BRT Test page</h1>
+
+<p role="status">Inserire il testo da modificare qui:</p>
+<textarea @bind="TextToBeChanged"></textarea>
+<button class="btn btn-primary" @onclick="ChangeText">Click me!</button>
+<hr>
+<p style="color: red;">@companyName</p>
+<p style="color: red;">@address</p>
+<p style="color: red;">@CAP @city @originCode</p>
+<hr>
+<label>@textChanged</label>
+
+<button class="btn btn-primary" @onclick="SaveInClipboard">Copy to clipboard</button>
